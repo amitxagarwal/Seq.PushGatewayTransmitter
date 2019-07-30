@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PushgatewayTransmitter
 {
-    [SeqApp("Seq.PushgatewayConnector",
+    [SeqApp("Seq.PushgatewayReactor",
         Description = "Uses a Handlebars template to send events to Pushgateway.")]
     public class PushgatewayReactor : Reactor, ISubscribeTo<LogEventData>
     {
