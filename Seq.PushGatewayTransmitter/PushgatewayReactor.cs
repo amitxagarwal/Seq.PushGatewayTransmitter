@@ -12,7 +12,7 @@ namespace PushgatewayTransmitter
 {
     [SeqApp("Seq.PushgatewayReactor",
         Description = "Uses a Handlebars template to send events to Pushgateway.")]
-    public class PushgatewayReactor : Reactor, ISubscribeTo<LogEventData>
+    public class PushgatewayReactor : SeqApp, ISubscribeTo<LogEventData>
     {
         //private readonly object pushGatewayNotification;
 
